@@ -1,0 +1,222 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{2D7B9BEB-6E9B-404C-A726-773C83AF4084}</ProjectGuid>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <Keyword>ManagedCProj</Keyword>
+    <RootNamespace>APEXNet</RootNamespace>
+    <SccProjectName>SAK</SccProjectName>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="Source\Paths.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="Source\Paths.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="Source\Paths.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="Source\Paths.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(PhysX3Path)\Include\foundation;$(PhysX3Path)\Source\foundation\include;$(PhysX3Path)\Source\foundation\include\windows;$(PhysX3Path)\Include;$(ApexPath)\public;$(ApexPath)\shared\general\shared;$(ApexPath)\shared\general\PxIOStream\include;$(ApexPath)\shared\general\PxIOStream\public;$(ApexPath)\shared\general\renderdebug\public;$(ApexPath)\shared\general\memory\include;$(ApexPath)\shared\general\meshimport\include\MeshImport;$(ApexPath)\shared\general\meshimport\include\utils;$(ApexPath)\shared\general\file_interface\include;$(ApexPath)\shared\general\floatmath\include;$(ApexPath)\shared\general\meshutils\include;$(ApexPath)\shared\general\stan_hull\include;$(ApexPath)\shared\general\string_parsing\include;$(ApexPath)\shared\SampleFramework\framework\include;$(ApexPath)\shared\SampleFramework\renderer\include;$(ApexPath)\shared\SampleFramework\platform\include;$(ApexPath)\shared\external\include;$(ApexPath)\framework\public;$(ApexPath)\NxParameterized\include;$(ApexPath)\NxParameterized\public;$(ApexPath)\tools\EditorWidgets\ApexParamEditor\include;$(ApexPath)\module\clothing\public;$(ApexPath)\module\clothing_legacy\public;$(ApexPath)\module\common_legacy\public;$(ApexPath)\module\destructible\public;$(ApexPath)\module\destructible_legacy\public;$(ApexPath)\module\framework_legacy\public;$(ApexPath)\module\emitter\public;$(ApexPath)\module\emitter_legacy\public;$(ApexPath)\module\explosion\public;$(ApexPath)\module\explosion_legacy\public;$(ApexPath)\module\fieldboundary\public;$(ApexPath)\module\fieldboundary_legacy\public;$(ApexPath)\module\iofx\public;$(ApexPath)\module\iofx_legacy\public;$(ApexPath)\module\nxfluidios\public;$(ApexPath)\module\pxparticleios\public;$(ApexPath)\module\wind\public;$(ApexPath)\externals\OpenAutomate\inc;$(ApexPath)\framework\public\PhysX3;$(PhysX2Path)\SDKs\Physics\include;$(PhysX2Path)\SDKs\PhysXLoader\include;$(PhysX2Path)\SDKs\Cooking\include;$(PhysX2Path)\SDKs\Foundation\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(ApexPath)\lib\vc10win64-PhysX_3.2;$(PhysX2Path)\SDKs\lib\win32;$(PhysX3Path)\Lib\win64;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(PhysX2Path)\SDKs\PhysXLoader\include;$(PhysX2Path)\SDKs\Physics\include;$(PhysX2Path)\SDKs\Foundation\include;$(PhysX2Path)\SDKs\Cooking\include;$(PhysX3Path)\Include\foundation;$(PhysX3Path)\Source\foundation\include;$(PhysX3Path)\Source\foundation\include\windows;$(PhysX3Path)\Include;$(ApexPath);$(ApexPath)\public;$(ApexPath)\framework\public;$(ApexPath)\framework\public\PhysX3;$(ApexPath)\NxParameterized\public;$(ApexPath)\module\destructible\public;$(IncludePath)</IncludePath>
+    <LibraryPath>$(ApexPath)\lib\vc10win64-PhysX_3.3;$(PhysX2Path)\SDKs\lib\win64;$(PhysX3Path)\Lib\win64;$(LibraryPath)</LibraryPath>
+    <OutDir>$(ProjectDir)bin\x64\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)bin\x64\$(Configuration)\Intermediate\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>PhysX3CHECKED_x64.lib;PhysX3CookingCHECKED_x64.lib;PhysX3CommonCHECKED_x64.lib;PhysX3ExtensionsCHECKED.lib;PxTaskCHECKED.lib;PhysXProfileSDKCHECKED.lib;ApexFrameworkCHECKED_x64.lib</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <AdditionalUsingDirectories>$(SolutionDir)Assemblies;%(AdditionalUsingDirectories)</AdditionalUsingDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>PhysX3CHECKED_x64.lib;PhysX3CookingCHECKED_x64.lib;PhysX3CommonCHECKED_x64.lib;PhysX3ExtensionsCHECKED.lib;PxTaskCHECKED.lib;PhysXProfileSDKCHECKED.lib;ApexFrameworkCHECKED_x64.lib;PhysXCooking64CHECKED.lib;NxCharacter64CHECKED.lib;PhysXLoader64.lib;PhysXCore64.lib;PhysXLoader64CHECKED.lib</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>
+      </AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>
+      </AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\ApexActor.h" />
+    <ClInclude Include="Source\ApexBoxShape.h" />
+    <ClInclude Include="Source\ApexShape.h" />
+    <ClInclude Include="Source\ApexException.h" />
+    <ClInclude Include="Source\ApexScene.h" />
+    <ClInclude Include="Source\ApexSceneDesc.h" />
+    <ClInclude Include="Source\ApexSdk.h" />
+    <ClInclude Include="Source\Asset.h" />
+    <ClInclude Include="Source\DestructibleActor.h" />
+    <ClInclude Include="Source\DestructibleAsset.h" />
+    <ClInclude Include="Source\DestructibleChunkDesc.h" />
+    <ClInclude Include="Source\DestructibleEnum.h" />
+    <ClInclude Include="Source\DestructibleHitChunk.h" />
+    <ClInclude Include="Source\DestructibleModule.h" />
+    <ClInclude Include="Source\DestructibleParameters.h" />
+    <ClInclude Include="Source\InMemoryFileBuf.h" />
+    <ClInclude Include="Source\Interface.h" />
+    <ClInclude Include="Source\MemoryStream.h" />
+    <ClInclude Include="Source\Module.h" />
+    <ClInclude Include="Source\ModuleAttribute.h" />
+    <ClInclude Include="Source\Parameter.h" />
+    <ClInclude Include="Source\ApexActorGetPhysicalLodRange.h" />
+    <ClInclude Include="Source\Range.h" />
+    <ClInclude Include="Source\RenderDebug.h" />
+    <ClInclude Include="Source\SerializationEnum.h" />
+    <ClInclude Include="Source\Serializer.h" />
+    <ClInclude Include="Source\StdAfx.h" />
+    <ClInclude Include="Source\UserAllocatorCallback.h" />
+    <ClInclude Include="Source\UserErrorCallback.h" />
+    <ClInclude Include="Source\UserRenderResourceManager.h" />
+    <ClInclude Include="Source\Util.h" />
+    <ClInclude Include="Source\Vertex.h" />
+    <ClInclude Include="Source\VertexColor.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\ApexActor.cpp" />
+    <ClCompile Include="Source\ApexBoxShape.cpp" />
+    <ClCompile Include="Source\ApexShape.cpp" />
+    <ClCompile Include="Source\ApexScene.cpp" />
+    <ClCompile Include="Source\ApexSceneDesc.cpp" />
+    <ClCompile Include="Source\ApexSdk.cpp" />
+    <ClCompile Include="Source\AssemblyInfo.cpp" />
+    <ClCompile Include="Source\Asset.cpp" />
+    <ClCompile Include="Source\DestructibleActor.cpp" />
+    <ClCompile Include="Source\DestructibleAsset.cpp" />
+    <ClCompile Include="Source\DestructibleChunkDesc.cpp" />
+    <ClCompile Include="Source\DestructibleHitChunk.cpp" />
+    <ClCompile Include="Source\DestructibleModule.cpp" />
+    <ClCompile Include="Source\DestructibleParameters.cpp" />
+    <ClCompile Include="Source\InMemoryFileBuf.cpp" />
+    <ClCompile Include="Source\Interface.cpp" />
+    <ClCompile Include="Source\MemoryStream.cpp" />
+    <ClCompile Include="Source\Module.cpp" />
+    <ClCompile Include="Source\ModuleAttribute.cpp" />
+    <ClCompile Include="Source\Parameter.cpp" />
+    <ClCompile Include="Source\Range.cpp" />
+    <ClCompile Include="Source\RenderDebug.cpp" />
+    <ClCompile Include="Source\Serializer.cpp" />
+    <ClCompile Include="Source\StdAfx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\Util.cpp" />
+    <ClCompile Include="Source\Vertex.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Source\Paths.props" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,76 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30110.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "APEX.Net", "APEX.Net\APEX.Net.vcxproj", "{2D7B9BEB-6E9B-404C-A726-773C83AF4084}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Destructible", "Samples\Destructible\Destructible.csproj", "{8F81F3DA-3905-4405-B57D-466AF408C285}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Assemblies", "Assemblies", "{77DFF00C-317A-4763-8BA9-F267F4C9180F}"
+	ProjectSection(SolutionItems) = preProject
+		Assemblies\cudart64_30_9.dll = Assemblies\cudart64_30_9.dll
+		Assemblies\NxCharacter64.dll = Assemblies\NxCharacter64.dll
+		Assemblies\PhysX.Net.dll = Assemblies\PhysX.Net.dll
+		Assemblies\PhysX.Net.pdb = Assemblies\PhysX.Net.pdb
+		Assemblies\PhysXCooking64.dll = Assemblies\PhysXCooking64.dll
+		Assemblies\PhysXCore64.dll = Assemblies\PhysXCore64.dll
+		Assemblies\PhysXDevice64.dll = Assemblies\PhysXDevice64.dll
+		Assemblies\PhysXLoader64.dll = Assemblies\PhysXLoader64.dll
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Samples", "Samples", "{DE5EB4C4-C539-4C58-A61A-3B334698F556}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Engine", "Samples\Engine\Engine.csproj", "{6C62D90B-B221-4299-8451-37C039D3CA1F}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 4
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://callisto:8080/tfs/development
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = APEX.Net\\APEX.Net.vcxproj
+		SccProjectName1 = APEX.Net
+		SccLocalPath1 = APEX.Net
+		SccProjectUniqueName2 = Samples\\Destructible\\Destructible.csproj
+		SccProjectTopLevelParentUniqueName2 = APEX.Net.sln
+		SccProjectName2 = Samples/Destructible
+		SccLocalPath2 = Samples\\Destructible
+		SccProjectUniqueName3 = Samples\\Engine\\Engine.csproj
+		SccProjectTopLevelParentUniqueName3 = APEX.Net.sln
+		SccProjectName3 = Samples/Engine
+		SccLocalPath3 = Samples\\Engine
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2D7B9BEB-6E9B-404C-A726-773C83AF4084}.Debug|x64.ActiveCfg = Debug|x64
+		{2D7B9BEB-6E9B-404C-A726-773C83AF4084}.Debug|x64.Build.0 = Debug|x64
+		{2D7B9BEB-6E9B-404C-A726-773C83AF4084}.Debug|x86.ActiveCfg = Debug|Win32
+		{2D7B9BEB-6E9B-404C-A726-773C83AF4084}.Debug|x86.Build.0 = Debug|Win32
+		{2D7B9BEB-6E9B-404C-A726-773C83AF4084}.Release|x64.ActiveCfg = Release|x64
+		{2D7B9BEB-6E9B-404C-A726-773C83AF4084}.Release|x64.Build.0 = Release|x64
+		{2D7B9BEB-6E9B-404C-A726-773C83AF4084}.Release|x86.ActiveCfg = Release|Win32
+		{2D7B9BEB-6E9B-404C-A726-773C83AF4084}.Release|x86.Build.0 = Release|Win32
+		{8F81F3DA-3905-4405-B57D-466AF408C285}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{8F81F3DA-3905-4405-B57D-466AF408C285}.Debug|x64.Build.0 = Debug|Any CPU
+		{8F81F3DA-3905-4405-B57D-466AF408C285}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{8F81F3DA-3905-4405-B57D-466AF408C285}.Release|x64.ActiveCfg = Release|Any CPU
+		{8F81F3DA-3905-4405-B57D-466AF408C285}.Release|x86.ActiveCfg = Release|Any CPU
+		{6C62D90B-B221-4299-8451-37C039D3CA1F}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{6C62D90B-B221-4299-8451-37C039D3CA1F}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{6C62D90B-B221-4299-8451-37C039D3CA1F}.Release|x64.ActiveCfg = Release|Any CPU
+		{6C62D90B-B221-4299-8451-37C039D3CA1F}.Release|x86.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8F81F3DA-3905-4405-B57D-466AF408C285} = {DE5EB4C4-C539-4C58-A61A-3B334698F556}
+		{6C62D90B-B221-4299-8451-37C039D3CA1F} = {DE5EB4C4-C539-4C58-A61A-3B334698F556}
+	EndGlobalSection
+EndGlobal

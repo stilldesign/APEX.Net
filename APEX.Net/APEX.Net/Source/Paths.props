@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<ImportGroup Label="PropertySheets" />
+	<PropertyGroup Label="UserMacros">
+		<PhysX2Path Condition="'$(PhysX2Path)' == '' ">C:\Program Files (x86)\NVIDIA Corporation\NVIDIA PhysX SDK\v2.8.4_win</PhysX2Path>
+		<PhysX3Path Condition="'$(PhysX3Path)' == '' ">C:\Program Files (x86)\NVIDIA Corporation\NVIDIA PhysX SDK\3.3.1</PhysX3Path>
+		<ApexPath Condition="'$(ApexPath)' == '' ">C:\Program Files (x86)\NVIDIA Corporation\APEX\1.3.1</ApexPath>
+	</PropertyGroup>
+	<PropertyGroup />
+	<ItemDefinitionGroup />
+	<ItemGroup>
+		<BuildMacro Include="PhysX2Path">
+			<Value>$(PhysX2Path)</Value>
+		</BuildMacro>
+		<BuildMacro Include="PhysX3Path">
+			<Value>$(PhysX3Path)</Value>
+		</BuildMacro>
+		<BuildMacro Include="ApexPath">
+			<Value>$(ApexPath)</Value>
+		</BuildMacro>
+	</ItemGroup>
+</Project>

@@ -1,0 +1,229 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Module">
+      <UniqueIdentifier>{8f21caef-ae7f-4fd2-8f21-e5d6757e31af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SDK">
+      <UniqueIdentifier>{c6075977-5d0a-44ce-992e-e167befc3169}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Exception">
+      <UniqueIdentifier>{3ab51015-da74-4bd5-bd17-0ad1670b886b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Module\Destructible">
+      <UniqueIdentifier>{4ef3735f-7089-4526-9acf-4086cdaf244a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene">
+      <UniqueIdentifier>{6dbc0021-028b-4ad7-a3ce-f776592eea62}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shapes">
+      <UniqueIdentifier>{4b993fbb-7043-4048-9729-1974cc0c72ad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Serialization">
+      <UniqueIdentifier>{7c6bc9af-8445-46ff-ac5c-8e0a77497287}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Asset">
+      <UniqueIdentifier>{34a39b1e-fba8-4398-b404-b323dac748d8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Actor">
+      <UniqueIdentifier>{7528f023-bf94-4e2e-a3e7-242ad3f79a42}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="IO">
+      <UniqueIdentifier>{899240b5-f989-462a-94aa-0cd851da9ca5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\Util.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\MemoryStream.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Interface.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Parameter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Range.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Vertex.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\VertexColor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\RenderDebug.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\UserRenderResourceManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Module.h">
+      <Filter>Module</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\ModuleAttribute.h">
+      <Filter>Module</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\ApexSdk.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\ApexException.h">
+      <Filter>Exception</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\DestructibleModule.h">
+      <Filter>Module\Destructible</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\DestructibleEnum.h">
+      <Filter>Module\Destructible</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\StdAfx.h" />
+    <ClInclude Include="Source\ApexScene.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\ApexSceneDesc.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\UserErrorCallback.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\UserAllocatorCallback.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\ApexShape.h">
+      <Filter>Shapes</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\ApexBoxShape.h">
+      <Filter>Shapes</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\DestructibleChunkDesc.h">
+      <Filter>Module\Destructible</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\SerializationEnum.h">
+      <Filter>Serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Serializer.h">
+      <Filter>Serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\DestructibleActor.h">
+      <Filter>Module\Destructible</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\DestructibleHitChunk.h">
+      <Filter>Module\Destructible</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\DestructibleAsset.h">
+      <Filter>Module\Destructible</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Asset.h">
+      <Filter>Asset</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\ApexActor.h">
+      <Filter>Actor</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\ApexActorGetPhysicalLodRange.h">
+      <Filter>Actor</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\DestructibleParameters.h">
+      <Filter>Module\Destructible</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\InMemoryFileBuf.h">
+      <Filter>IO</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\StdAfx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\MemoryStream.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Util.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Interface.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Parameter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Range.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Vertex.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\RenderDebug.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\AssemblyInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Module.cpp">
+      <Filter>Module</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\ModuleAttribute.cpp">
+      <Filter>Module</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\ApexSdk.cpp">
+      <Filter>SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\DestructibleModule.cpp">
+      <Filter>Module\Destructible</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\ApexScene.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\ApexSceneDesc.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\ApexShape.cpp">
+      <Filter>Shapes</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\ApexBoxShape.cpp">
+      <Filter>Shapes</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\DestructibleChunkDesc.cpp">
+      <Filter>Module\Destructible</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Serializer.cpp">
+      <Filter>Serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\DestructibleActor.cpp">
+      <Filter>Module\Destructible</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\DestructibleHitChunk.cpp">
+      <Filter>Module\Destructible</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\DestructibleAsset.cpp">
+      <Filter>Module\Destructible</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Asset.cpp">
+      <Filter>Asset</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\ApexActor.cpp">
+      <Filter>Actor</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\DestructibleParameters.cpp">
+      <Filter>Module\Destructible</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\InMemoryFileBuf.cpp">
+      <Filter>IO</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Source\Paths.props" />
+  </ItemGroup>
+</Project>
